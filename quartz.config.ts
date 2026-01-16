@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "zh-CN",
-    baseUrl: "https://github.com/Mike31nb-cuhk/BaDaoZhan",
+    baseUrl: "mike31nb-cuhk.github.io/Quartz-build-4-Obsidian",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
