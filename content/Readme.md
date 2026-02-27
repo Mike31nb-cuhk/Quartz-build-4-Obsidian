@@ -3,7 +3,7 @@
 
 基于 UE5 的快节奏砍杀动作游戏 Demo，以"拔刀斩"为核心机制，支持俯视角 (Top-down) 与越肩视角 (Over-the-shoulder) 双视角实时切换。
 
-![](附件/Readme/file-20260117000936470.mp4)
+![](file-20260228025102281.mp4)
 
 ## 核心玩法
 
@@ -15,7 +15,7 @@
 
 ### TD↔TP 视角切换
 
-![](附件/Readme/file-20260117002240836.mp4)
+![](file-20260228025102305.mp4)
 
 通过逆向几何实时计算Camera Offset，在BlendNode外层进行覆盖旋转值，使用`OnBlendResults` 中的二阶Blend结果，消除镜头跳变。
 
@@ -23,7 +23,7 @@
 
 ### 视角状态管理
 
-![](附件/Readme/file-20260117002550822.mp4)
+![](file-20260228025102354.mp4)
 拒绝 Subsystem 过度设计，采用 GameplayTag + BlueprintFunctionLibrary 方案，零运行时实例开销实现视角状态同步。
 
 → [25.12.25 - 26.1.07 拒绝过度设计：为何我放弃 Subsystem 而选用GameplayTag + BlueprintFunctionLibrary管理视角状态](25.12.25%20-%2026.1.07%20拒绝过度设计：为何我放弃%20Subsystem%20而选用GameplayTag%20+%20BlueprintFunctionLibrary管理视角状态.md)
